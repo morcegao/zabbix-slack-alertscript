@@ -47,7 +47,7 @@ payload="payload={\"channel\": \"${to//\"/\\\"}\",  \
 \"icon_emoji\": \"${emoji}\"}"
 
 # Execute the HTTP POST request of the payload to Slack via curl, storing stdout (the response body)
-return=$(curl $proxy -sm 5 --data-urlencode "${payload}" $url -A 'zabbix-slack-alertscript / https://raw.githubusercontent.com/5h0ckw4v3/zabbix-slack-alertscript/master/slack.sh')
+return=$(curl $proxy -sm 5 --data-urlencode "${payload}" $url -A 'zabbix-slack-alertscript / https://raw.githubusercontent.com/networkprobr/zabbix-slack-alertscript/master/slack.sh')
 
 # If the response body was not what was expected from Slack ("ok"), something went wrong so print the Slack error to stderr and exit with non-zero
 if [[ "$return" != 'ok' ]]; then
