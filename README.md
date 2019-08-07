@@ -115,3 +115,7 @@ More Information
 ----------------
 * [Slack incoming web-hook functionality](https://my.slack.com/services/new/incoming-webhook)
 * [Zabbix custom alertscripts documentation](https://www.zabbix.com/documentation/current/manual/config/notifications/media/script)
+
+Troubleshooting
+----------------
+
